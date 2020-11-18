@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="nombre" placeholder="nombre">
+    <input type="text" id="apellido" placeholder="apellido">
+    <input type="text" id="dni" placeholder="dni">
+    <button onclick="registrarCliente()">Registar</button>
+    <button onclick="editarCliente()">Editar</button>
+
+    <div>
+        <h1>Reservas</h1>
+        <input type="text" id="dniReserva" placeholder="dni">
+        <input type="text" id="numero" placeholder="Nº habitación">
+        <input type="date" id="checkin">
+        <button onclick="reservar()">Realizar reserva</button>
+    </div>
+    <div>
+        <h1>Fin reserva</h1>
+        <input type="text" id="dniCheckOut" placeholder="dni">
+        <input type="date" id="fechaCheckOut">
+        <button onclick="checkout()">Realizar checkout</button>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
